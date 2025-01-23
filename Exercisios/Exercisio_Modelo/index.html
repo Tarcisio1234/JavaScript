@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Calcule seu IMC</h1>
+    <form action="" class="form" method="post">
+      <label for="peso">Peso</label>
+      <input type="text" class="todosItens" id="peso" required>
+      <label for="altura">Altura</label>
+      <input type="text" class="todosItens" id="altura" required>
+      <fieldset class="escolhaSexo">
+        <legend>Selecione o seu sexo</legend>
+        <input type="radio" name="sexo" id="Masculino1" value="Masculino">
+        <label for="Masculino1" >Masculino</label>
+        <input type="radio" name="sexo" id="Feminino1" value="Feminino">
+        <label for="Feminino1">Feminino</label>
+      </fieldset>
+      <button type="submit">Enviar</button>
+      <h3 id="resultado"></h3>
+    </form>
+  </section>
+  <div>
+
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
