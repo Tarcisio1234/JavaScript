@@ -1,4 +1,3 @@
-// Importe apenas os módulos necessários
 const { initializeApp } = require("firebase/app");
 const { getFirestore, collection, getDocs, addDoc, deleteDoc, doc, query, where, onSnapshot, orderBy } = require("firebase/firestore");
 const firebaseConfig = {
