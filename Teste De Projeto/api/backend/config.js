@@ -13,3 +13,4 @@ initializeApp(firebaseConfig)
 const db = getFirestore()
 const User = collection(db, "usuarios");
 module.exports = User;
+

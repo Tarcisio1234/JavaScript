@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Lista de Usuários</h1>
+    <table id="tabelaUsuarios">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os dados serão inseridos aqui via JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Formulário de edição (inicialmente oculto) -->
+    <div id="formEdicao" style="display: none; margin-top: 20px;">
+        <h2>Editar Usuário</h2>
+        <form id="formEditarUsuario">
+            <label for="id">Id:</label>
+            <input type="text" id="idUsuario" name="id">
+            <label for="nomeEditar">Nome:</label>
+            <input type="text" id="nomeEditar" name="nome" required>
+            <label for="idadeEditar">Idade:</label>
+            <input type="text" id="idadeEditar" name="idade" required>
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="fecharFormulario()">Cancelar</button>
+        </form>
+    </div>
+    <script src="script_2.js"></script>
 </body>
 </html>
